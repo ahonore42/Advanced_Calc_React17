@@ -76,7 +76,7 @@ const Calculator = props => {
                         console.log(expression)
                         switch(true) {
                             case(arr[0].includes('+')): arr[0] = arr[0].split('+').reduce((a, v) => parseFloat(a) + parseFloat(v)); break
-                            case(arr[0].includes('-')): console.log(arr[0]); arr[0] = arr[0].split('-').reduce((a, v) => parseFloat(a) - parseFloat(v)); break
+                            case(arr[0].includes('-')): arr[0] = arr[0].split('-').reduce((a, v) => parseFloat(a) - parseFloat(v)); break
                             case(arr[0].includes('*')): arr[0] = arr[0].split('*').reduce((a, v) => parseFloat(a) * parseFloat(v)); break
                             case(arr[0].includes('/')): arr[0] = arr[0].split('/').reduce((a, v) => parseFloat(a) / parseFloat(v)); break
                             case(arr[0].includes('%')): arr[0] = arr[0].split('%').reduce((a, v) => parseFloat(a) % parseFloat(v)); break
