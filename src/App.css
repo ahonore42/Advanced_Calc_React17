@@ -1,38 +1,88 @@
-.App {
+.container {
   text-align: center;
+  margin-top: 10px;
+  width: 90%;
+  margin: 30px auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container h1, .container p {
+  color: grey;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.calc-container {
+  display: inline-block;
+  background: url('./images/c1.jpg');
+  background-size: 100% 100%;
+  width: 460px;
+  margin: 0 auto;
+  border-radius: 20px;
+  box-shadow: 0px 6px 12px black;
+  padding: 5px;
+  padding-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.calc-button {
+  width: 22%;
+  min-height: 10px;
+  color: rgb(233, 233, 233);
+  background-image: linear-gradient(rgb(80, 80, 80), rgb(61, 61, 61));
+  height: 65px;
+  margin: 1%;
+  border-radius: 5px;
+  box-shadow: 0px 5px 6px black;
+  font-size: 24px;
+  border: none;
+  outline: none;
 }
 
-.App-link {
-  color: #61dafb;
+.calc-button:active {
+  box-shadow: 0px 1px 2px black;
+  
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.width-2 {
+  width: 22% !important;
+}
+
+.calc-button-op {
+  color: #fff;
+  background-image: linear-gradient(rgb(206, 110, 0), rgb(92, 52, 0)) ;
+}
+
+.calc-button-top {
+  color: rgb(233, 233, 233);
+  background-image: linear-gradient(rgb(32, 32, 32), rgb(10, 10, 10));
+  background-size: 100% 100%;
+}
+
+.answer-box {
+  background-color: #ddd;
+  color: #fff;
+  text-align: right;
+  min-height: 25px;
+  width: 90%;
+  padding: 25px 1%;
+  margin: 10px auto;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 3px black inset;
+  
+}
+
+.answer-box p {
+  margin: 0 30px;
+  font-size: 20px;
+  color: black;
+  word-wrap: normal;
+}
+
+.calc-container h2 {
+  padding: 10px;
+  margin: 5px auto 20px auto;
+  color: rgb(233, 233, 233);
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: 0px 1px 6px black;
+  font-weight: 500;
+  font-style: oblique;
 }
